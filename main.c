@@ -48,8 +48,14 @@ typedef struct QUARTO{
     int status;
 }QUARTO;
 
+int opt(){
+    printf("O que deseja fazer?\n");
+    printf("(1) Informações do Hotel;");
+}
+
 int main()
 {
-    printf("\n\n___|Hotel Descanso Garantido|___\n\n");
-
+    printf("\n\n___|Hotel Descanso Garantido|___\n\n", setlocale(LC_ALL,""));
+    printf("Seja bem-vindo ao nosso sistema de Auto-Atendimento!\n");
+    opt();
 }
